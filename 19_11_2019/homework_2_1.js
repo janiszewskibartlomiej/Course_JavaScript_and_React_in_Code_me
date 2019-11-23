@@ -5,7 +5,7 @@ const HIGHWAY_SPEED_LIMIT = 140;
 let speed = 49;
 let typeOfRoad = 'city';
 
-if (typeOfRoad === "city") {
+if (typeOfRoad === 'city') {
     switch (speed) {
         case speed < CITY_SPEED_LIMIT:
             console.log('Miasto: jedzisz prawidłowo');
@@ -14,7 +14,7 @@ if (typeOfRoad === "city") {
             console.log('Miasto: przekroczyles prędkość');
             break;
     }
-} else if (typeOfRoad === "expressway") {
+} else if (typeOfRoad === 'expressway') {
     switch(speed) {
         case speed < TWO_LANE_EXPRESSWAY_SPEED_LIMIT:
                 console.log('Eska: jedzisz prawidłowo');
@@ -23,7 +23,7 @@ if (typeOfRoad === "city") {
                 console.log('Eska: przekroczyles prędkość');
                 break;
     } 
-} else if (typeOfRoad === "highway") {
+} else if (typeOfRoad === 'highway') {
     switch(speed) {
         case speed < HIGHWAY_SPEED_LIMIT:
         console.log('Autostrada: jedzisz prawidłowo');
