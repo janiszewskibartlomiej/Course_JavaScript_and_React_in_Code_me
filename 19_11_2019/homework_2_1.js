@@ -5,32 +5,27 @@ const HIGHWAY_SPEED_LIMIT = 140;
 let speed = 49;
 let typeOfRoad = 'city';
 
-if (typeOfRoad === 'city') {
-    switch (speed) {
-        case speed < CITY_SPEED_LIMIT:
-            console.log('Miasto: jedzisz prawidłowo');
+    switch (typeOfRoad) { /*50 === true*/
+        case 'city':
+            if (speed < CITY_SPEED_LIMIT) {
+                console.log('Miasto: jedzisz prawidłowo');
+            } else {
+                console.log('Miasto: przekroczyles prędkość');
+            }
             break;
-        case speed > CITY_SPEED_LIMIT:
-            console.log('Miasto: przekroczyles prędkość');
+        case 'expressway':
+            if (speed < TWO_LANE_EXPRESSWAY_SPEED_LIMIT) {
+                console.log('Eska: jedzisz prawidłowo');
+            } else {
+                console.log('Eska: przekroczyles prędkość');
+            }
+            break;
+        case 'highway':
+            if (speed < HIGHWAY_SPEED_LIMIT) {
+                console.log('Autostrada: jedzisz prawidłowo');
+            } else {
+                console.log('Autostrada: przekroczyles prędkość');
+            }
             break;
     }
-} else if (typeOfRoad === 'expressway') {
-    switch(speed) {
-        case speed < TWO_LANE_EXPRESSWAY_SPEED_LIMIT:
-                console.log('Eska: jedzisz prawidłowo');
-                break;
-            case speed > TWO_LANE_EXPRESSWAY_SPEED_LIMIT:
-                console.log('Eska: przekroczyles prędkość');
-                break;
-    } 
-} else if (typeOfRoad === 'highway') {
-    switch(speed) {
-        case speed < HIGHWAY_SPEED_LIMIT:
-        console.log('Autostrada: jedzisz prawidłowo');
-        break;
-        case speed > HIGHWAY_SPEED_LIMIT:
-        console.log('Autostrada: przekroczyles prędkość');
-        break;
-    }         
-}
 
