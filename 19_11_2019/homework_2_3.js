@@ -19,19 +19,19 @@ if (typeOfRoad === 'city') {
 } else if (typeOfRoad === 'expressway') {
     switch(speed) {
         case speed < TWO_LANE_EXPRESSWAY_SPEED_LIMIT:
-                console.log('Eska: jedzisz prawidłowo');
-                break;
-            case speed > TWO_LANE_EXPRESSWAY_SPEED_LIMIT:
-                console.log('Eska: przekroczyles prędkość');
-                break;
+            console.log('Eska: jedzisz prawidłowo');
+            break;
+        case speed > TWO_LANE_EXPRESSWAY_SPEED_LIMIT:
+            console.log('Eska: przekroczyles prędkość');
+            break;
     } 
 } else if (typeOfRoad === 'highway') {
     switch(speed) {
         case speed < HIGHWAY_SPEED_LIMIT:
-        console.log('Autostrada: jedzisz prawidłowo');
-        break;
+            console.log('Autostrada: jedzisz prawidłowo');
+            break;
         case speed > HIGHWAY_SPEED_LIMIT:
-        console.log('Autostrada: przekroczyles prędkość');
+            console.log('Autostrada: przekroczyles prędkość');
         break;
     }         
 }
