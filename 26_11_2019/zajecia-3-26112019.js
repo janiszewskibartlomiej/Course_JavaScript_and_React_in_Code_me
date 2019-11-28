@@ -62,24 +62,53 @@ const obj2 = {};
 
 
 const array = [];
-// undefined
 const array1 = new Array();
-// undefined
 new Array('a', 'b')
-(2) ["a", "b"]
+// (2) ["a", "b"]
+
 new Array('a')
-["a"]
+// ["a"]
+
 new Array({}, {})
-(2) [{…}, {…}]
+// (2) [{…}, {…}]
+
 new Array(5)
-(5) [empty × 5]length: 5__proto__: Array(0)
+// (5) [empty × 5]length: 5
+
 new Array(5, 7)
-(2) [5, 7]
+// (2) [5, 7]
+
 new Array(4.8, 7.9)
-(2) [4.8, 7.9]
+// (2) [4.8, 7.9]
+
 new Array(4.8)
-VM11035:1 Uncaught RangeError: Invalid array length
-    at <anonymous>:1:1
-(anonymous) @ VM11035:1
+//Uncaught RangeError: Invalid array length at <anonymous>:1:1
+
 ['a', 'b']
-(2) ["a", "b"]0: "a"1: "b"length: 2__proto__: Array(0)
+// (2) ["a", "b"]
+// 0: "a"
+// 1: "b"
+// length: 2
+
+
+const array = ['a', 'b', 'c']
+
+const callback = (item, index) => console.log(item, ' ->> ', index);
+array.forEach(callback);
+// a  ->>  0
+// b  ->>  1
+// c  ->>  2
+
+
+const CITY_SPEED_LIMIT = 50;
+const TWO_LANE_EXPRESSWAY_SPEED_LIMIT = 120;
+const HIGHWAY_SPEED_LIMIT = 140;
+
+let speed = 50;
+let typeOfRoad = 'city';
+
+if (typeOfRoad === 'city') {
+  console.log('Miasto: ' + (speed <= 50 ? 'jade prawidlowo' : 'przekroczylem predkosc');
+} else if (typeOfRoad === 'expressway') {
+
+}
