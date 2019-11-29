@@ -8,8 +8,6 @@ myFunction(150, 'expressway'); zostanie wyswietlony tekst  'Eska: przekroczyles 
 
 itd.*/
 
-function speed_test(speed, typeOfRoad='city') {
-
 const CITY_SPEED_LIMIT = 50;
 const TWO_LANE_EXPRESSWAY_SPEED_LIMIT = 120;
 const HIGHWAY_SPEED_LIMIT = 140;
@@ -18,6 +16,7 @@ let road = ['Miasto: ', 'Eska: ', 'Autostrada: ']
 let tooMuch = 'przekroczyłeś prędkość'
 let corectSpead = 'jedziesz prawidłowo'
 
+function speed_test(speed, typeOfRoad='city') {
 
 switch (typeOfRoad) {
     case 'city':
