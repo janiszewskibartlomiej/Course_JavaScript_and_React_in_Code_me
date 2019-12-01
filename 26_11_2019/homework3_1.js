@@ -13,7 +13,7 @@ function numberAndSum (min, max) {
         suma += i
         console.log(i);
     }
-    console.log("Suma liczb = ", suma);
+    return console.log("Suma liczb = ", suma);
 }
 
 numberAndSum(2,10);
