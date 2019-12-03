@@ -21,7 +21,6 @@ function marks (chars='koparka') {
 
 function marksSimpleVer (chars='koparka') {
     let new_string = '';
-    
     let len = chars.length;
     for (let i = 0; i <= len; i += 2) {
         if (chars[i]) {
