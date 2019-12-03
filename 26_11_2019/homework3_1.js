@@ -5,12 +5,18 @@ Funkcja powinna wypisać (console.log) wszystkie liczby parzyste oraz zwrócić 
 wszystkich liczb z przedziału określonego przez parametr min i max.*/
 
 function numberAndSum (min, max) {
+	
     suma = 0;
+	
+	for (let i = min; i <= max; i += 1) {
+		 suma += i
+	}
+	
     if (min % 2 != 0) {
         min = min + 1
     }
     for (let i = min; i <= max; i = i + 2) {
-        suma += i
+       
         console.log(i);
     }
     return console.log("Suma liczb = ", suma);
@@ -18,6 +24,6 @@ function numberAndSum (min, max) {
 
 numberAndSum(2,10);
 
-numberAndSum(3,19)
+numberAndSum(3,19);
 
-numberAndSum(1,18)
+numberAndSum(1,3);
