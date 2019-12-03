@@ -5,9 +5,9 @@ Funkcja powinna zwrócić string stworzony ze znaków znajdujących się
  jako parametr str przyjmie łańcuch 'koparka'*/
 
 function marks (chars='koparka') {
-    new_string = '';
-    new_chars = chars.split('');
-    len = new_chars.length;
+    let new_string = '';
+    let new_chars = chars.split('');
+    let len = new_chars.length;
     for (let i = 0; i <= len; i += 2) {
         if (new_chars[i]) {
             //console.log(new_chars[i]);
