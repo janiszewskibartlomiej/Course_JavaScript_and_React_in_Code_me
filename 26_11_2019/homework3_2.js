@@ -16,3 +16,18 @@ function marks (chars='koparka') {
         }
     return new_string;
     }
+
+/*----------Secend version--Simple---------------------------*/
+
+function marksSimpleVer (chars='koparka') {
+    let new_string = '';
+    
+    let len = chars.length;
+    for (let i = 0; i <= len; i += 2) {
+        if (chars[i]) {
+            //console.log(new_chars[i]);
+            new_string += chars[i];
+        }
+        }
+    return new_string;
+    }
