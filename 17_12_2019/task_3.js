@@ -31,3 +31,19 @@ const listaName = breeds.map(element => ({[element.intelligence] : element.name}
      //const listaDocelowa = listaName.reduce((idCat, group) => Object.assign(idCat,Array(group)));
      return solution;
  };
+
+
+ function task3Foreach (data = breeds) {
+    let solution = {}
+    const listaName = data.map(element => ({[element.intelligence] : element.name}));
+    listaName.forEach(element => {
+        let a = keys(element);
+        let b = element[a];
+        if (solution[a]) {
+            (solution[a]).push(b);
+       } else {
+           solution[a] = [b];
+       }
+    });       
+    return solution;
+};
