@@ -11,3 +11,23 @@
  *  // ...
  * }
  */
+const listaName = breeds.map(element => ({[element.intelligence] : element.name}));
+
+ function task3 (data = breeds) {
+     let solution = {}
+     const listaName = data.map(element => ({[element.intelligence] : element.name}));
+     for (let i = 0, len = listaName.length; i < len; i +=1) {
+         let a = keys(listaName[i]);
+         let b = listaName[i][a];
+        //  console.log(a, b, solution);
+        if (solution[a]) {
+             (solution[a]).push(b);
+        } else {
+            solution[a] = [b];
+        }
+         
+     }
+     //const listaDocelowa = listaName.map( (item, vol) => ({[item] : [vol]}));
+     //const listaDocelowa = listaName.reduce((idCat, group) => Object.assign(idCat,Array(group)));
+     return solution;
+ };

@@ -48,5 +48,5 @@ let zestawienieMap = breeds.map(usr => ({[usr.country_code]: usr.origin}))
 const zestawienieReduce  = zestawienieMap.reduce(
     (obj1, obj2) => Object.assign(obj1,obj2)
     ,
-    
+    {}
 );
