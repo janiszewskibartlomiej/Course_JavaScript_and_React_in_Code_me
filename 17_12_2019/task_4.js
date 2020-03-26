@@ -11,3 +11,5 @@
  * wtaw elementy listy do elementu UL
  *
  */
+
+let appElement = document.getElementById('app');
